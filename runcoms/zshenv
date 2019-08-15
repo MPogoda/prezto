@@ -9,3 +9,5 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+POWERLEVEL9K_INSTALLATION_DIR="${ZDOTDIR:-$HOME}/.zprezto/modules/prompt/external/powerlevel10k"
