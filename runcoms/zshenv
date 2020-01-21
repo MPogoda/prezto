@@ -11,3 +11,9 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
 fi
 
 POWERLEVEL9K_INSTALLATION_DIR="${ZDOTDIR:-$HOME}/.zprezto/modules/prompt/external/powerlevel10k"
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+export USERID=$(id -u)
+export TAXIFY_NODEJS_HOST=192.168.99.1
