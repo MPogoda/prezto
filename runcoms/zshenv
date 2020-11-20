@@ -11,4 +11,3 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
 fi
 
 export USERID=$(id -u)
-export TAXIFY_NODEJS_HOST=192.168.99.1
