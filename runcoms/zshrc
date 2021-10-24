@@ -51,3 +51,5 @@ play_random_album() {
   mpc add "$(mpc ls "$(mpc ls | shuf -n1)" | shuf -n1)"
   mpc play
 }
+
+[ -f "/home/mpogoda/.ghcup/env" ] && source "/home/mpogoda/.ghcup/env" # ghcup-env
