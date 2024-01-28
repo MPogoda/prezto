@@ -40,3 +40,7 @@ bindkey '^f'   edit-command-line
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.p10k.zsh.
 [[ -f "${ZDOTDIR:-$HOME}/.p10k.zsh" ]] && source "${ZDOTDIR:-$HOME}/.p10k.zsh"
+
+export BOLT_SERVER_DISABLE_COMPLETION=false
+export BOLT_SERVER_ROOT=/Users/mykhailopohoda/repos/taxify/server
+[[ "$BOLT_SERVER_DISABLE_COMPLETION" != "true" ]] && source /Users/mykhailopohoda/repos/taxify/server/tooling_scripts/completions/server_autocomplete_zsh.sh
