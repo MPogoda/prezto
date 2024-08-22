@@ -44,3 +44,8 @@ bindkey '^f'   edit-command-line
 export BOLT_SERVER_DISABLE_COMPLETION=false
 export BOLT_SERVER_ROOT=/Users/mykhailopohoda/repos/taxify/server
 [[ "$BOLT_SERVER_DISABLE_COMPLETION" != "true" ]] && source /Users/mykhailopohoda/repos/taxify/server/tooling_scripts/completions/server_autocomplete_zsh.sh
+
+# pnpm
+export PNPM_HOME="/Users/mykhailopohoda/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
